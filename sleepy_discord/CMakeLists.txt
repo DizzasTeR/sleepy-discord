@@ -146,3 +146,5 @@ endif()
 if(ENABLE_VOICE)
 	target_compile_definitions(sleepy-discord PUBLIC SLEEPY_VOICE_ENABLED)
 endif()
+
+target_compile_features(sleepy-discord PUBLIC cxx_std_20)
