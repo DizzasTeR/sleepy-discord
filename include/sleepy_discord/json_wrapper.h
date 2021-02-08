@@ -4,6 +4,7 @@
 #include <vector>
 #include <array>
 #include <tuple>
+#include <string>
 //for errrors
 #include <iostream>
 
