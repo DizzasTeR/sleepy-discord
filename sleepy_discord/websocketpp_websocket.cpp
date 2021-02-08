@@ -35,8 +35,8 @@ namespace SleepyDiscord {
 	void WebsocketppDiscordClient::init() {
 		// set up access channels to only log interesting things
 		this_client.clear_access_channels(websocketpp::log::alevel::all);
-		this_client.set_access_channels(websocketpp::log::alevel::connect);
-		this_client.set_access_channels(websocketpp::log::alevel::disconnect);
+		//this_client.set_access_channels(websocketpp::log::alevel::connect);
+		//this_client.set_access_channels(websocketpp::log::alevel::disconnect);
 
 		this_client.set_tls_init_handler([](websocketpp::connection_hdl) {
 			return websocketpp::lib::make_shared<asio::ssl::context>(asio::ssl::context::tlsv1);
